@@ -34,4 +34,4 @@ before_script:
 script:
  - pwd
  - ls
- - cd /build && conan install .. --build=missing --settings compiler.libcxx="libstdc++11" && cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release .. && make -j tentris_server
+ - cd build && conan install .. --build=missing --settings compiler.libcxx="libstdc++11" && cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release .. && make -j tentris_server
