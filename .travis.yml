@@ -15,7 +15,7 @@ addons:
       - build-essential 
       - uuid-dev
       - libserd-dev
-      - python3-pip
+      - python-pip
       
 install:
  - if [ "$CXX" = "g++" ]; then export CXX="g++-8" CC="gcc-8"; fi
