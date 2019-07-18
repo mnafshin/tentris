@@ -32,4 +32,6 @@ before_script:
  - conan remote add tsl https://api.bintray.com/conan/tessil/tsl && conan remote add public-conan https://api.bintray.com/conan/bincrafters/public-conan && conan remote add stiffstream https://api.bintray.com/conan/stiffstream/public
 
 script:
+ - pwd
+ - ls
  - cd /build && conan install .. --build=missing --settings compiler.libcxx="libstdc++11" && cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release .. && make -j tentris_server
